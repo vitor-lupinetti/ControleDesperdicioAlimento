@@ -1,0 +1,42 @@
+<h1>Consulta</h1>
+<br />
+<form>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="form-group">
+        <label for="codigo" class="col-md-12">Código</label>
+        <input type="number" id="codigo" class="form-control" />
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="form-group">
+        <label for="peso" class="col-md-12">Peso (g)</label>
+        <input type="number" id="peso" class="form-control" />
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="form-group">
+        <label for="data" class="col-md-12">Data</label>
+        <input type="date" id="data" class="form-control" />
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="form-group">
+        <label class="text-secondary col-md-12">Botão</label>
+        <button type="button" id="buscar" class="btn btn-primary">Buscar</button>
+      </div>
+    </div>
+  </div>
+</form>
+
+<table class="table table-responsive-sm table-striped text-center" id="tabela_resultado_consulta">
+  <thead>
+    <tr>
+      <th scope="col">Código</th>
+      <th scope="col">Diferença de peso (g)</th>
+      <th scope="col">Porcentage desperdiçada (%)</th>
+      <th scope="col">Data</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
