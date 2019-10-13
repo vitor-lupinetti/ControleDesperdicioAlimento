@@ -5,16 +5,31 @@
 		<div class="col-md-4">
 			<div class="form-group">
 				<label for="codigo" class="col-md-12">Código</label>
-				<input type="number" id="codigo" class="form-control" />
+				<input type="number" id="codigo" class="form-control text-center" />
+				<div class="invalid-feedback">Campo numérico obrigatório</div>
 			</div>
 		</div>
 		<div class="col-md-4">
 			<div class="form-group">
 				<label for="peso" class="col-md-12">Peso (g)</label>
-				<input type="number" id="peso" class="form-control" />
+				<input type="number" id="peso" class="form-control text-center" />
+				<div class="invalid-feedback">Campo numérico obrigatório</div>
 			</div>
 		</div>
-		<div class="col-md-4">
+		<div class="col-md-2">
+			<div class="form-group">
+				<label class="text-secondary col-md-12">Radio</label>
+				<div class="btn-group btn-group-toggle" data-toggle="buttons">
+				  <label class="btn btn-dark">
+				    <input type="radio" name="status" id="entrada" value="E" /> Entrada
+				  </label>
+				  <label class="btn btn-dark">
+				    <input type="radio" name="status" id="saida" value="S" /> Saída
+				  </label>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-2">
 			<div class="form-group">
 				<label class="text-secondary col-md-12">Botão</label>
 				<button type="button" id="simular" class="btn btn-primary">Simular</button>
@@ -22,3 +37,5 @@
 		</div>
 	</div>
 </form>
+
+<script src="js/simulador.js"></script>

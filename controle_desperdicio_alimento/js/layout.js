@@ -5,9 +5,13 @@ $(document).ready(function (){
 		$.ajax({
 			url: url_destino,
 
-			success: function (retorno){
+			method: "post",
+		})
+			.done(function (retorno){
 				$("#conteudo_pagina").html(retorno);
-			}
-		});
+			})
+			.fail(function (){
+				$("#conteudo_pagina").html("Erro ao fazer requisição");
+			});
 	});
 });
