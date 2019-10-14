@@ -6,6 +6,10 @@ $(document).ready(function (){
 			url: url_destino,
 
 			method: "post",
+
+			beforeSend: function (){
+				$("#conteudo_pagina").html("Carregando...");
+			}
 		})
 			.done(function (retorno){
 				$("#conteudo_pagina").html(retorno);
